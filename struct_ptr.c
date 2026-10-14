@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+	int rollno;
+	char name[30];
+	float mark;
+};
+int main()
+{
+	struct student s;
+	struct student *ptr;
+	ptr=&s;
+	printf("Enter Roll No:");
+	scanf("%d",&ptr->rollno);
+	printf("Enter name:");
+	scanf("%s",&ptr->name);
+	printf("Enter mark:");
+	scanf("%f",&ptr->mark);
+	printf("Student details\n");
+	printf("Roll No:%d\n",ptr->rollno);
+	printf("Name:%s\n",ptr->name);
+	printf("Mark:%.2f",ptr->mark);
+	return 0;
+}
